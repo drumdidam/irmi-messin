@@ -1,18 +1,31 @@
-import React from 'react';
-import './App.css'
+import React, { useState, useEffect } from 'react';
+import './index.css'
 import Nav from './components/Nav'
 import Hero from './sections/Hero'
+import Bio from './sections/Bio'
+import FSHeaderImage from './assets/FS_Header.jpeg';
+import LogoAnimation from './assets/Handwritting.webm'
 
 const App = () => (
+
   <main className="relative">
-    <header className="p-10">
+    <div className="flex items-center justify-center w-screen h-screen border-amber-400 border-4 bg-cover bg-center relative"
+      style={{ backgroundImage: `url(${FSHeaderImage})` }}
+    >
       <Nav />
-    </header>
-    <section className="xl:padding-1 wide:padding-r padding-b">
-      <Hero />
-    </section>
+
+      <video
+        src={LogoAnimation}
+        autoPlay
+        muted
+        playsInline
+        loop
+        className="absolute top-1/2 left-1/2 items-center border-4 border-red-500 z-40 "
+        style={{ transform: 'translate(-50%, -50%)' }}
+      />
+    </div>
     <section className="p-10">
-      Bio
+      <Bio />
     </section>
     <section className="p-10">
       Media
@@ -23,7 +36,7 @@ const App = () => (
     <section className="p-10">
       Gallery
     </section>
-  </main>
+  </main >
 );
 
 export default App

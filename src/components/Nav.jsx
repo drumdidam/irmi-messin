@@ -7,7 +7,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full shadow-md fixed top-0 left-0 bg-white z-50">
+    <nav className="w-full fixed top-0 left-0 z-50">
       <div className="max-w-[1050px] mx-auto px-4 flex items-center justify-between h-[60px]">
 
         {/* Logo */}
