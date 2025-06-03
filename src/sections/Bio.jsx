@@ -14,7 +14,7 @@ const Bio = () => {
       </div>
       <div
         className="w-2/3">
-        <p className="text-lg text-white max-w-3xl leading-relaxed">
+        <p className="text-lg text-black max-w-3xl leading-relaxed">
           Die Querflöte begleitet mich seit meinem neunten Lebensjahr – ursprünglich, weil sie das Lieblingsinstrument meiner Mutter ist. Inzwischen ist sie ebenso aus meinem Leben nicht mehr wegzudenken.
           <br /><br />
           Seit meinem Konzertfachstudium an der Hochschule Mozarteum beschäftige ich mich intensiv mit moderner Musik und habe gelernt, sowohl technisch als auch musikalisch immer wieder neue Herausforderungen anzunehmen sowie Grenzen zu überschreiten.
