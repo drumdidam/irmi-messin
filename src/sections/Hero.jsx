@@ -1,6 +1,6 @@
 import React from 'react';
 import headerLogo from '../assets/Logo.svg';
-import HeroImg from '../assets/Hero.jpeg'
+import HeroImg from '../assets/Hero.webp'
 import Handwritting from '../assets/Logo_white.webm'
 import { Parallax, useParallax } from 'react-scroll-parallax';
 
@@ -28,7 +28,7 @@ const Hero = () => {
         >
         </div>
         <div
-          className="flex p-20 items-center w-full h-2/3"
+          className="z-50 flex p-20 items-center w-full h-2/3"
         >
           <nav
             className="flex flex-col space-y-5 p-10"

@@ -8,40 +8,11 @@ export const navLinks = [
 	{ href: "#contact-us", label: "Gallery" },
 ];
 
-export const footerLinks = [
-	{
-		title: "Products",
-		links: [
-			{ name: "Air Force 1", link: "/" },
-			{ name: "Air Max 1", link: "/" },
-			{ name: "Air Jordan 1", link: "/" },
-			{ name: "Air Force 2", link: "/" },
-			{ name: "Nike Waffle Racer", link: "/" },
-			{ name: "Nike Cortez", link: "/" },
-		],
-	},
-	{
-		title: "Help",
-		links: [
-			{ name: "About us", link: "/" },
-			{ name: "FAQs", link: "/" },
-			{ name: "How it works", link: "/" },
-			{ name: "Privacy policy", link: "/" },
-			{ name: "Payment policy", link: "/" },
-		],
-	},
-	{
-		title: "Get in touch",
-		links: [
-			{ name: "customer@nike.com", link: "mailto:customer@nike.com" },
-			{ name: "+92554862354", link: "tel:+92554862354" },
-		],
-	},
-];
+export const bioText = [
 
-export const socialMedia = [
-	{ src: facebook, alt: "facebook logo" },
-	{ src: twitter, alt: "twitter logo" },
-	{ src: instagram, alt: "instagram logo" },
+	{ title: "Composition", text: "Die intensive Auseinandersetzung mit meinem Instrument haben mich immer wieder ein Stück näher zu mir selbst gebracht. Die Konfrontation mit eigenen Zweifeln und das Überwinden innerer Ängste, doch allem voran die unbeschreibliche Freude und Liebe zur Musik, bedeuten für mich pure Persönlichkeitsentfaltung. Diese Faszination gebe ich ebenso gerne an Schüler und Studenten weiter. In den letzten Jahren habe ich zudem das Komponieren für mich entdeckt – ein weiterer Weg, meine musikalischen Ideen zum Ausdruck zu bringen." },
+	{ title: "Recording", text: "Seit meinem Konzertfachstudium an der Hochschule Mozarteum beschäftige ich mich intensiv mit moderner Musik und habe gelernt, sowohl technisch als auch musikalisch immer wieder neue Herausforderungen anzunehmen sowie Grenzen zu überschreiten.  " },
+	{ title: "Ensemble", text: "Gleichzeitig sind Engagements in verschiedenen Orchestern und Kammermusikensembles ein wichtiger Bestandteil meines künstlerischen Schaffens – von der Volksmusik über sämtliche Stilrichtungen der Klassik bis hin zur Moderne. " },
+
 ];
 

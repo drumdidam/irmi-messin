@@ -10,7 +10,18 @@
   --color-custom-dark: #ff3737;
 }
 
+.perspective {
+  perspective: 1000px;
+}
 
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
 
 :root {
   font-family: Poppins, sans-serif;

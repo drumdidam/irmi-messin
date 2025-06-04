@@ -1,33 +1,58 @@
-import React from 'react'
-import Profile from '../assets/Profile.png'
+import React from "react";
+import FlipCard from '../components/flipcard'
+import RecordImg from '../assets/Records.webp'
+import EnsembleImg from '../assets/Ensemble.webp'
+import CompositionImg from '../assets/Composition.webp'
+
 
 const Bio = () => {
   return (
-    <div
-      className="flex items-center gap-15 align-middle bg-secondary w-screen h-screen border-amber-400 border-4 bg-cover bg-center relative"
-    >
-      <div className="w-1/3 p-5">
-        <img
-          src={Profile}
-          alt="Profile"
-        />
-      </div>
-      <div
-        className="w-2/3">
-        <p className="text-lg text-black max-w-3xl leading-relaxed">
-          Die Querflöte begleitet mich seit meinem neunten Lebensjahr – ursprünglich, weil sie das Lieblingsinstrument meiner Mutter ist. Inzwischen ist sie ebenso aus meinem Leben nicht mehr wegzudenken.
-          <br /><br />
-          Seit meinem Konzertfachstudium an der Hochschule Mozarteum beschäftige ich mich intensiv mit moderner Musik und habe gelernt, sowohl technisch als auch musikalisch immer wieder neue Herausforderungen anzunehmen sowie Grenzen zu überschreiten.
-          <br /><br />
-          Gleichzeitig sind Engagements in verschiedenen Orchestern und Kammermusikensembles ein wichtiger Bestandteil meines künstlerischen Schaffens – von der Volksmusik über sämtliche Stilrichtungen der Klassik bis hin zur Moderne.
-          <br /><br />
-          Die intensive Auseinandersetzung mit meinem Instrument haben mich immer wieder ein Stück näher zu mir selbst gebracht. Die Konfrontation mit eigenen Zweifeln und das Überwinden innerer Ängste, doch allem voran die unbeschreibliche Freude und Liebe zur Musik, bedeuten für mich pure Persönlichkeitsentfaltung.
-          <br /><br />
-          Diese Faszination gebe ich ebenso gerne an Schüler und Studenten weiter. In den letzten Jahren habe ich zudem das Komponieren für mich entdeckt – ein weiterer Weg, meine musikalischen Ideen zum Ausdruck zu bringen.
-        </p>
-      </div>
-    </div>
-  );
+    <div className="flex items-center flex-col w-full p-10 bg-black">
+      <h1 className="text-white text-4xl mb-8 text-center">
+        Biography
+      </h1>
+      <div className="flex flex-col md:flex-row w-full max-w-6xl mx-auto gap-4 group">
+        {/* Linke Spalte */}
+        <div className="flex flex-col w-full md:w-1/2 gap-4">
+          <a
+            href="#Records"
+            className="block transform transition-all duration-300 group-hover:scale-95 hover:scale-105 hover:z-10"
+          >
+            <FlipCard
+              bgImage={RecordImg}
+              backText="..."
+              height="h-64"
+              title="Recordings"
+            />
+          </a>
+          <a
+            href="#Ensemble"
+            className="block transform transition-all duration-300 group-hover:scale-95 hover:scale-105 hover:z-10"
+          >
+            <FlipCard
+              bgImage={EnsembleImg}
+              backText="..."
+              height="h-64"
+              title="Ensemble"
+            />
+          </a>
+        </div>
+
+        {/* Rechte Spalte */}
+        <div className="flex w-full md:w-1/2">
+          <a
+            href="#Composition"
+            className="block transform transition-all duration-300 group-hover:scale-95 hover:scale-105 hover:z-10 w-full"
+          >
+            <FlipCard
+              bgImage={CompositionImg}
+              backText="..."
+              height="h-full min-h-[300px]"
+              title="Composition"
+            />
+          </a>
+        </div>
+      </div>    </div>);
 };
 
 export default Bio
