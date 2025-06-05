@@ -7,8 +7,8 @@ import CompositionImg from '../assets/Composition.webp'
 
 const Bio = () => {
   return (
-    <div className="flex items-center flex-col w-full p-10 bg-black">
-      <h1 className="text-white text-4xl mb-8 text-center">
+    <div className="flex items-center flex-col w-full p-10 bg-primary">
+      <h1 className="text-secondary text-4xl mb-8 text-center">
         Biography
       </h1>
       <div className="flex flex-col md:flex-row w-full max-w-6xl mx-auto gap-4 group">

@@ -20,8 +20,8 @@ const FlipCard = ({ title, bgImage, backText, height = "h-96" }) => {
           </h1>
         </div>
         {/* Rückseite */}
-        <div className="absolute w-full h-full bg-white text-black p-6 rounded-xl shadow-lg rotate-y-180 backface-hidden flex items-center justify-center">
-          <p className="text-center text-lg">{backText}</p>
+        <div className="absolute w-full h-full bg-tertiary text-secondary p-6 rounded-xl shadow-lg rotate-y-180 backface-hidden flex items-center justify-center">
+          <p className="text-center text-primary text-lg">{backText}</p>
         </div>
       </div>
     </div>

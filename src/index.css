@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 @theme {
-  --color-primary: #A7CFE6;
-  --color-secondary: #F5EFED;
-  --color-tertiary: #ED9390;
-
+  --color-primary: #EEECEA;
+  --color-secondary: #25283D;
+  --color-tertiary: #C9ADA1;
   --color-custom-dark: #ff3737;
 }
 
@@ -24,7 +23,7 @@
 }
 
 :root {
-  font-family: Poppins, sans-serif;
+  font-family: Playfair Display, serif;
   line-height: 1.5;
   font-weight: 400;
 

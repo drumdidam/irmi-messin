@@ -41,17 +41,17 @@ const Navbar = () => {
 
           {/* Desktop Nav */}
 
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden md:flex space-x-20">
             {navLinks.map((link) => (
               <li key={link.id} className="relative group">
-                <a href={link.href} className="text-black font-bold relative">
+                <a href={link.href} className="text-secondary text-2xl font-bold relative">
                   {link.label}
 
                   {/* obere Linie (schwarz), wächst von rechts nach links */}
-                  <span className="absolute right-0 -top-1 w-0 h-0.5 bg-black origin-right transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute right-0 -top-1 w-0 h-0.5 bg-secondary origin-right transition-all duration-300 group-hover:w-full"></span>
 
                   {/* untere Linie (weiß), wächst von links nach rechts */}
-                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-black origin-left transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-secondary origin-left transition-all duration-300 group-hover:w-full"></span>
                 </a>
               </li>
             ))}
