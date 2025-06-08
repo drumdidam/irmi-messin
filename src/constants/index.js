@@ -13,40 +13,45 @@ import {
 	RxReader,
 	RxRocket,
 	RxAccessibility,
+	RxArrowTopRight,
 } from "react-icons/rx";
 
 export const ServiceData = [
 	{
-		icon: RxCrop,
+		icon: RxArrowTopRight,
 		title: "BEAT FURRER",
 		content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
 		backgroundImage: oenm_BeatFurrer,
+		videoUrl: "https://www.youtube.com/watch?v=-nvxLgaILS8"
 	},
 	{
-		icon: RxPencil2,
+		icon: RxArrowTopRight,
 		title: "ERIC TANGUY",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: oenm_EricTanguy,
+		videoUrl: "https://www.youtube.com/watch?v=Vuu22XFUN0o"
 	},
 	{
-		icon: RxDesktop,
+		icon: RxArrowTopRight,
 		title: "MOTOHARU KAWASHIMA",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: oenm_Motoharu,
+		videoUrl: "https://www.youtube.com/watch?v=BX8kGveJgwU"
 	},
 	{
-		icon: RxReader,
+		icon: RxArrowTopRight,
 		title: "ANDOR LOSONCZY",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
 		backgroundImage: oenm_AndorLosonczy,
+		videoUrl: "https://www.youtube.com/watch?v=ovyzHHRSNtA"
 	},
 ];
 export const navLinks = [
 	{ href: "#home", label: "Home" },
-	{ href: "#about-us", label: "Bio" },
-	{ href: "#products", label: "Media" },
-	{ href: "#contact-us", label: "Composition" },
-	{ href: "#contact-us", label: "Gallery" },
+	{ href: "#about-me", label: "About Me" },
+	{ href: "#records", label: "Records" },
+	{ href: "#composition", label: "Composition" },
+	{ href: "#gallery", label: "Gallery" },
 ];
 
 export const bioText = [

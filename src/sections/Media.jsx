@@ -1,25 +1,30 @@
 import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
 import ActiveSlider from '../components/ActiveSlider'
 
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+
 
 import recordingImg from '../assets/Recording.webp'
 import composition2 from '../assets/Les_11.jpg'
 
+
 const Media = () => {
   return (
-    <div className="flex flex-col items-center w-screen h-screen p-10 border-4 border-amber-50 bg-black">
+    <div className="h-screen w-screen flex flex-col items-center p-10 border-4 border-amber-50 bg-primary">
       {/* Titel */}
-      <h1 className="text-white text-4xl mb-8 text-center">Recordings</h1>
-      <div>
-        <ActiveSlider />
+      <h1 className="text-secondary text-4xl mb-8 text-center">Recordings</h1>
+
+      {/* Container für die 2 Hälften */}
+      <div className="flex flex-col flex-1 w-full">
+        <div className="h-1/2 border-4 border-red-500">
+          <ActiveSlider />
+        </div>
+        <div className="h-1/2 border-4 border-amber-600">
+          {/* Zweite Hälfte */}
+        </div>
       </div>
     </div>
   );
 };
+
 
 export default Media;

@@ -3,6 +3,7 @@ import headerLogo from '../assets/Logo.svg';
 import HeroImg from '../assets/Hero.webp'
 import Handwritting from '../assets/Handwritting_W85.webm'
 import { Parallax, useParallax } from 'react-scroll-parallax';
+import { navLinks } from "../constants"
 
 
 const Hero = () => {
@@ -27,13 +28,13 @@ const Hero = () => {
         <div className="flex w-full h-1/3" />
         <div className="z-10 flex p-10 items-center w-full h-2/3">
           <nav className="flex flex-col space-y-5">
-            {["Bio", "Composition", "Media", "Contact"].map((label) => (
+            {navLinks.map((link) => (
               <a
-                key={label}
-                href={`#${label.toLowerCase()}`}
+                key={link.label}
+                href={link.href}
                 className="text-6xl relative group text-secondary"
               >
-                {label}
+                {link.label}
                 <span className="absolute right-0 -top-1 w-0 h-0.5 bg-secondary origin-right transition-all duration-300 group-hover:w-full"></span>
                 <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-secondary origin-left transition-all duration-300 group-hover:w-full"></span>
               </a>
