@@ -1,5 +1,46 @@
 import { facebook, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
 
+
+import oenm_AndorLosonczy from '../assets/slider_thumb/oenm_AndorLosonczy.jpg'
+import oenm_BeatFurrer from '../assets/slider_thumb/oenm_BeatFurrer.jpg'
+import oenm_EricTanguy from '../assets/slider_thumb/oenm_EricTanguy.jpg'
+import oenm_Motoharu from '../assets/slider_thumb/oenm_Motoharu.jpg'
+
+import {
+	RxCrop,
+	RxDesktop,
+	RxPencil2,
+	RxReader,
+	RxRocket,
+	RxAccessibility,
+} from "react-icons/rx";
+
+export const ServiceData = [
+	{
+		icon: RxCrop,
+		title: "BEAT FURRER",
+		content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+		backgroundImage: oenm_BeatFurrer,
+	},
+	{
+		icon: RxPencil2,
+		title: "ERIC TANGUY",
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: oenm_EricTanguy,
+	},
+	{
+		icon: RxDesktop,
+		title: "MOTOHARU KAWASHIMA",
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: oenm_Motoharu,
+	},
+	{
+		icon: RxReader,
+		title: "ANDOR LOSONCZY",
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		backgroundImage: oenm_AndorLosonczy,
+	},
+];
 export const navLinks = [
 	{ href: "#home", label: "Home" },
 	{ href: "#about-us", label: "Bio" },
