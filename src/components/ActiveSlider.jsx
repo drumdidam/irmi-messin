@@ -34,9 +34,13 @@ const ActiveSlider = () => {
             slidesPerView: 2,
             spaceBetween: 15,
           },
-          700: {
+          600: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            spaceBetween: 5,
+          },
+          1500: {
+            slidesPerView: 4,
+            spaceBetween: 5,
           },
         }}
         freeMode={true}
@@ -45,24 +49,46 @@ const ActiveSlider = () => {
         className="max-w-[90%] lg:max-w-[80%]"
       >
         {ServiceData.map((item) => (
+
           <SwiperSlide key={item.title}>
             <div
-              className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
+              className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
               onClick={() => handleVideoClick(item.videoUrl)}
             >
+              {/* Video on hover */}
+              <video
+                src={item.previewVideo}
+                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20"
+                muted
+                autoPlay
+                loop
+                playsInline
+              />
+
+              {/* Background image underneath video */}
               <div
-                className="absolute inset-0 bg-cover bg-center"
+                className="absolute inset-0 bg-cover bg-center z-0"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
               />
-              <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
-              <div className="relative flex flex-col gap-3 z-10">
-                <item.icon className="text-blue-600 group-hover:text-blue-400 w-[32px] h-[32px]" />
-                <h1 className="text-xl lg:text-2xl">{item.title}</h1>
-                <p className="lg:text-[18px]">{item.content}</p>
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50 z-10 transition-opacity duration-300" />
+
+              {/* Content */}
+              <div className="relative z-20 flex flex-col gap-3 overflow-hidden">
+                <h1 className="text-xl lg:text-2xl transform transition-all duration-300 group-hover:-translate-y-2 z-30">
+                  {item.title}
+                </h1>
+                <p className="lg:text-[18px] opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 z-30">
+                  {item.content}
+                </p>
               </div>
-              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100 z-10" />
+
+              {/* Arrow */}
+              <RxArrowTopRight className="absolute bottom-5 left-5 w-[35px] h-[35px] text-white group-hover:text-blue-500 group-hover:rotate-45 duration-100 z-40" />
             </div>
           </SwiperSlide>
+
         ))}
       </Swiper>
 

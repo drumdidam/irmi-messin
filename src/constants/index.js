@@ -6,6 +6,25 @@ import oenm_BeatFurrer from '../assets/slider_thumb/oenm_BeatFurrer.jpg'
 import oenm_EricTanguy from '../assets/slider_thumb/oenm_EricTanguy.jpg'
 import oenm_Motoharu from '../assets/slider_thumb/oenm_Motoharu.jpg'
 
+import preview_AndorLosonczy from '../assets/previews/preview_AndorLosonczy.mp4'
+import preview_Glockenspiel from '../assets/previews/preview_Glockenspiel.mp4'
+import preview_GwynPritchard from '../assets/previews/preview_GwynPritchard.mp4'
+import preview_EricTanguy from '../assets/previews/preview_EricTanguy.mp4'
+import preview_BeatFurrer from '../assets/previews/preview_BeatFurrer.mp4'
+import preview_Motoharu from '../assets/previews/preview_Motoharu.mp4'
+
+import thumb_AndorLosonczy from '../assets/previews/thumb_AndorLosonczy.jpg'
+import thumb_Glockenspiel from '../assets/previews/thumb_Glockenspiel.jpg'
+import thumb_GwynPritchard from '../assets/previews/thumb_GwynPritchard.jpg'
+import thumb_EricTanguy from '../assets/previews/thumb_EricTanguy.jpg'
+import thumb_BeatFurrer from '../assets/previews/thumb_BeatFurrer.jpg'
+import thumb_Motoharu from '../assets/previews/thumb_Motoharu.jpg'
+
+
+
+
+
+
 import {
 	RxCrop,
 	RxDesktop,
@@ -21,30 +40,54 @@ export const ServiceData = [
 		icon: RxArrowTopRight,
 		title: "BEAT FURRER",
 		content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-		backgroundImage: oenm_BeatFurrer,
-		videoUrl: "https://www.youtube.com/watch?v=-nvxLgaILS8"
+		backgroundImage: thumb_BeatFurrer,
+		videoUrl: "https://www.youtube.com/watch?v=-nvxLgaILS8",
+		previewVideo: preview_BeatFurrer,
 	},
 	{
 		icon: RxArrowTopRight,
 		title: "ERIC TANGUY",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: oenm_EricTanguy,
-		videoUrl: "https://www.youtube.com/watch?v=Vuu22XFUN0o"
+		backgroundImage: thumb_EricTanguy,
+		videoUrl: "https://www.youtube.com/watch?v=Vuu22XFUN0o",
+		previewVideo: preview_EricTanguy,
 	},
 	{
 		icon: RxArrowTopRight,
 		title: "MOTOHARU KAWASHIMA",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: oenm_Motoharu,
-		videoUrl: "https://www.youtube.com/watch?v=BX8kGveJgwU"
+		backgroundImage: thumb_Motoharu,
+		videoUrl: "https://www.youtube.com/watch?v=BX8kGveJgwU",
+		previewVideo: preview_Motoharu,
+
 	},
 	{
 		icon: RxArrowTopRight,
 		title: "ANDOR LOSONCZY",
 		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-		backgroundImage: oenm_AndorLosonczy,
-		videoUrl: "https://www.youtube.com/watch?v=ovyzHHRSNtA"
+		backgroundImage: thumb_AndorLosonczy,
+		videoUrl: "https://www.youtube.com/watch?v=ovyzHHRSNtA",
+		previewVideo: preview_AndorLosonczy,
 	},
+	{
+		icon: RxArrowTopRight,
+		title: "GLOCKENSPIEL",
+		content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+		backgroundImage: thumb_Glockenspiel,
+		videoUrl: "https://youtu.be/3I5-dAJ3cI0?t=6164",
+		previewVideo: preview_Glockenspiel,
+	},
+	{
+		icon: RxArrowTopRight,
+		title: "GWYN PRITCHARD",
+		content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+		backgroundImage: thumb_GwynPritchard,
+		videoUrl: "https://www.unitv.org/beitrag.asp?ID=299",
+		previewVideo: preview_GwynPritchard,
+	},
+
+
+
 ];
 export const navLinks = [
 	{ href: "#home", label: "Home" },
