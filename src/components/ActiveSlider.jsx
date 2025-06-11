@@ -27,20 +27,21 @@ const ActiveSlider = () => {
   };
 
   return (
-    <div className="flex items-center justify-center flex-col h-full w-full">
+    <div className="flex items-center justify-center flex-col h-full w-full cursor-grab">
       <Swiper
+        spaceBetween={5}
         breakpoints={{
-          340: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-          },
           600: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          800: {
             slidesPerView: 3,
-            spaceBetween: 5,
+            spaceBetween: 15,
           },
           1500: {
             slidesPerView: 4,
-            spaceBetween: 5,
+            spaceBetween: 15,
           },
         }}
         freeMode={true}
@@ -52,7 +53,7 @@ const ActiveSlider = () => {
 
           <SwiperSlide key={item.title}>
             <div
-              className="flex flex-col gap-6 mb-20 group relative shadow-lg text-white px-6 py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
+              className="flex flex-col mb-20 group relative shadow-lg text-white px-3 py-4 sm:px-4 sm:py-6 lg:px-6 lg:py-8 h-[250px] w-[215px] lg:h-[400px] lg:w-[350px] overflow-hidden cursor-pointer"
               onClick={() => handleVideoClick(item.videoUrl)}
             >
               {/* Video on hover */}
@@ -75,11 +76,11 @@ const ActiveSlider = () => {
               <div className="absolute inset-0 bg-black opacity-10 group-hover:opacity-50 z-10 transition-opacity duration-300" />
 
               {/* Content */}
-              <div className="relative z-20 flex flex-col gap-3 overflow-hidden">
-                <h1 className="text-xl lg:text-2xl transform transition-all duration-300 group-hover:-translate-y-2 z-30">
+              <div className="relative z-20 flex flex-col gap-3 text-white max-w-full max-w-[calc(100%-1.5rem)]">
+                <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl transform transition-all duration-300 group-hover:-translate-y-2 z-30 leading-snug">
                   {item.title}
                 </h1>
-                <p className="lg:text-[18px] opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 z-30">
+                <p className="text-sm sm:text-base md:text-[17px] opacity-0 translate-y-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0 z-30 break-words leading-snug line-clamp-3">
                   {item.content}
                 </p>
               </div>

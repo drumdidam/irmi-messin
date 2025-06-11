@@ -20,6 +20,9 @@ import thumb_EricTanguy from '../assets/previews/thumb_EricTanguy.jpg'
 import thumb_BeatFurrer from '../assets/previews/thumb_BeatFurrer.jpg'
 import thumb_Motoharu from '../assets/previews/thumb_Motoharu.jpg'
 
+import thumb_Flute from '../assets/Hevhetia_Flute.webp'
+import thumb_PingPong from '../assets/PingPong.webp'
+
 
 
 
@@ -34,6 +37,44 @@ import {
 	RxAccessibility,
 	RxArrowTopRight,
 } from "react-icons/rx";
+
+export const CompositionData = [
+	{
+		icon: RxArrowTopRight,
+		title: "FLUTE",
+		content: "The unconventional solo album with characteristic title Flute of the Austrian flute player Irmgard Messin",
+		backgroundImage: thumb_Flute,
+		videoUrl: "https://www.hevhetia.com/product/flute",
+	},
+	{
+		icon: RxArrowTopRight,
+		title: "HIS HOLY PING PONG",
+		content: "",
+		backgroundImage: thumb_PingPong,
+		videoUrl: "https://static1.squarespace.com/static/57e11572579fb32aef3141e7/65eb6e8389b2604f49406a99/65eb6edb272b32549a7d2eb9/1709928332779/His+Holy+Lama+Ping+Pong.mp3",
+	}
+
+]
+
+
+
+export const RecordsData = [
+	{
+		icon: RxArrowTopRight,
+		title: "FLUTE",
+		content: "The unconventional solo album with characteristic title Flute of the Austrian flute player Irmgard Messin",
+		backgroundImage: thumb_Flute,
+		videoUrl: "https://www.hevhetia.com/product/flute",
+	},
+	{
+		icon: RxArrowTopRight,
+		title: "HIS HOLY PING PONG",
+		content: "",
+		backgroundImage: thumb_PingPong,
+		videoUrl: "https://static1.squarespace.com/static/57e11572579fb32aef3141e7/65eb6e8389b2604f49406a99/65eb6edb272b32549a7d2eb9/1709928332779/His+Holy+Lama+Ping+Pong.mp3",
+	}
+
+]
 
 export const ServiceData = [
 	{
